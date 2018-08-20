@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52F24198212A4C44008D0DA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F24197212A4C44008D0DA3 /* AppDelegate.m */; };
+		52F2419B212A4C44008D0DA3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F2419A212A4C44008D0DA3 /* MainViewController.m */; };
+		52F2419E212A4C44008D0DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F2419C212A4C44008D0DA3 /* Main.storyboard */; };
+		52F241A0212A4C45008D0DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F2419F212A4C45008D0DA3 /* Assets.xcassets */; };
+		52F241A3212A4C45008D0DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F241A1212A4C45008D0DA3 /* LaunchScreen.storyboard */; };
+		52F241A6212A4C45008D0DA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F241A5212A4C45008D0DA3 /* main.m */; };
+		52F241BD212A4C74008D0DA3 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F241AF212A4C74008D0DA3 /* CircleViewController.m */; };
+		52F241BE212A4C74008D0DA3 /* CircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F241B0212A4C74008D0DA3 /* CircleViewController.xib */; };
+		52F241BF212A4C74008D0DA3 /* ShinyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F241B3212A4C74008D0DA3 /* ShinyViewController.m */; };
+		52F241C0212A4C74008D0DA3 /* ShinyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F241B4212A4C74008D0DA3 /* ShinyViewController.xib */; };
+		52F241C1212A4C74008D0DA3 /* SmoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F241B7212A4C74008D0DA3 /* SmoothViewController.m */; };
+		52F241C2212A4C74008D0DA3 /* SmoothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F241B8212A4C74008D0DA3 /* SmoothViewController.xib */; };
+		52F241C3212A4C74008D0DA3 /* MicInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F241BB212A4C74008D0DA3 /* MicInputViewController.m */; };
+		52F241C4212A4C74008D0DA3 /* MicInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F241BC212A4C74008D0DA3 /* MicInputViewController.xib */; };
+		52F241C9212A4D7F008D0DA3 /* ColorPickerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F241C7212A4D7E008D0DA3 /* ColorPickerImageView.m */; };
+		52F241CA212A4D7F008D0DA3 /* colorWheel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F241C8212A4D7E008D0DA3 /* colorWheel1.png */; };
+		52F241CE212A4D88008D0DA3 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F241CD212A4D88008D0DA3 /* DrawView.m */; };
+		52F241D2212A4D91008D0DA3 /* CGPointUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 52F241D0212A4D91008D0DA3 /* CGPointUtils.c */; };
+		52F241D5212A4DD0008D0DA3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F241D4212A4DD0008D0DA3 /* AudioToolbox.framework */; };
+		52F241D7212A4DD7008D0DA3 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F241D6212A4DD7008D0DA3 /* CoreAudio.framework */; };
+		52F241D9212A4DDE008D0DA3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F241D8212A4DDE008D0DA3 /* AVFoundation.framework */; };
+		52F241DB212A4DE8008D0DA3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F241DA212A4DE8008D0DA3 /* QuartzCore.framework */; };
+		52F241DD212A4DEF008D0DA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F241DC212A4DEF008D0DA3 /* CoreGraphics.framework */; };
+		52F241DF212A4DF5008D0DA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F241DE212A4DF5008D0DA3 /* UIKit.framework */; };
+		52F241E3212A4E04008D0DA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F241E2212A4E04008D0DA3 /* Foundation.framework */; };
+		52F241E7212A4E27008D0DA3 /* AudioProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F241E6212A4E27008D0DA3 /* AudioProcessor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		52F241EA212A559B008D0DA3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 52F241E9212A559B008D0DA3 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52F24193212A4C44008D0DA3 /* GlassLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlassLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F24196212A4C44008D0DA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52F24197212A4C44008D0DA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52F24199212A4C44008D0DA3 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		52F2419A212A4C44008D0DA3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		52F2419D212A4C44008D0DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52F2419F212A4C45008D0DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52F241A2212A4C45008D0DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52F241A4212A4C45008D0DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F241A5212A4C45008D0DA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52F241AE212A4C74008D0DA3 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		52F241AF212A4C74008D0DA3 /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		52F241B0212A4C74008D0DA3 /* CircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleViewController.xib; sourceTree = "<group>"; };
+		52F241B2212A4C74008D0DA3 /* ShinyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinyViewController.h; sourceTree = "<group>"; };
+		52F241B3212A4C74008D0DA3 /* ShinyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinyViewController.m; sourceTree = "<group>"; };
+		52F241B4212A4C74008D0DA3 /* ShinyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShinyViewController.xib; sourceTree = "<group>"; };
+		52F241B6212A4C74008D0DA3 /* SmoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothViewController.h; sourceTree = "<group>"; };
+		52F241B7212A4C74008D0DA3 /* SmoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmoothViewController.m; sourceTree = "<group>"; };
+		52F241B8212A4C74008D0DA3 /* SmoothViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SmoothViewController.xib; sourceTree = "<group>"; };
+		52F241BA212A4C74008D0DA3 /* MicInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicInputViewController.h; sourceTree = "<group>"; };
+		52F241BB212A4C74008D0DA3 /* MicInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicInputViewController.m; sourceTree = "<group>"; };
+		52F241BC212A4C74008D0DA3 /* MicInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MicInputViewController.xib; sourceTree = "<group>"; };
+		52F241C6212A4D7E008D0DA3 /* ColorPickerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerImageView.h; sourceTree = "<group>"; };
+		52F241C7212A4D7E008D0DA3 /* ColorPickerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerImageView.m; sourceTree = "<group>"; };
+		52F241C8212A4D7E008D0DA3 /* colorWheel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorWheel1.png; sourceTree = "<group>"; };
+		52F241CC212A4D88008D0DA3 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		52F241CD212A4D88008D0DA3 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		52F241D0212A4D91008D0DA3 /* CGPointUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CGPointUtils.c; sourceTree = "<group>"; };
+		52F241D1212A4D91008D0DA3 /* CGPointUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPointUtils.h; sourceTree = "<group>"; };
+		52F241D4212A4DD0008D0DA3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		52F241D6212A4DD7008D0DA3 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		52F241D8212A4DDE008D0DA3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		52F241DA212A4DE8008D0DA3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		52F241DC212A4DEF008D0DA3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		52F241DE212A4DF5008D0DA3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		52F241E0212A4DFC008D0DA3 /* libform.5.4.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libform.5.4.tbd; path = usr/lib/libform.5.4.tbd; sourceTree = SDKROOT; };
+		52F241E2212A4E04008D0DA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52F241E5212A4E27008D0DA3 /* AudioProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioProcessor.h; sourceTree = "<group>"; };
+		52F241E6212A4E27008D0DA3 /* AudioProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioProcessor.m; sourceTree = "<group>"; };
+		52F241E8212A4E9F008D0DA3 /* GlassLight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlassLight-Prefix.pch"; sourceTree = "<group>"; };
+		52F241E9212A559B008D0DA3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52F24190212A4C44008D0DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F241E3212A4E04008D0DA3 /* Foundation.framework in Frameworks */,
+				52F241DF212A4DF5008D0DA3 /* UIKit.framework in Frameworks */,
+				52F241DD212A4DEF008D0DA3 /* CoreGraphics.framework in Frameworks */,
+				52F241DB212A4DE8008D0DA3 /* QuartzCore.framework in Frameworks */,
+				52F241D9212A4DDE008D0DA3 /* AVFoundation.framework in Frameworks */,
+				52F241D7212A4DD7008D0DA3 /* CoreAudio.framework in Frameworks */,
+				52F241D5212A4DD0008D0DA3 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52F2418A212A4C44008D0DA3 = {
+			isa = PBXGroup;
+			children = (
+				52F241E9212A559B008D0DA3 /* README.md */,
+				52F24195212A4C44008D0DA3 /* GlassLight */,
+				52F24194212A4C44008D0DA3 /* Products */,
+				52F241D3212A4DCF008D0DA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52F24194212A4C44008D0DA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52F24193212A4C44008D0DA3 /* GlassLight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52F24195212A4C44008D0DA3 /* GlassLight */ = {
+			isa = PBXGroup;
+			children = (
+				52F241AC212A4C74008D0DA3 /* Common */,
+				52F241AD212A4C74008D0DA3 /* Circle */,
+				52F241B9212A4C74008D0DA3 /* MicInput */,
+				52F241B1212A4C74008D0DA3 /* Shiny */,
+				52F241B5212A4C74008D0DA3 /* Smooth */,
+				52F24196212A4C44008D0DA3 /* AppDelegate.h */,
+				52F24197212A4C44008D0DA3 /* AppDelegate.m */,
+				52F24199212A4C44008D0DA3 /* MainViewController.h */,
+				52F2419A212A4C44008D0DA3 /* MainViewController.m */,
+				52F2419C212A4C44008D0DA3 /* Main.storyboard */,
+				52F2419F212A4C45008D0DA3 /* Assets.xcassets */,
+				52F241A1212A4C45008D0DA3 /* LaunchScreen.storyboard */,
+				52F241A4212A4C45008D0DA3 /* Info.plist */,
+				52F241A5212A4C45008D0DA3 /* main.m */,
+				52F241E8212A4E9F008D0DA3 /* GlassLight-Prefix.pch */,
+			);
+			path = GlassLight;
+			sourceTree = "<group>";
+		};
+		52F241AC212A4C74008D0DA3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				52F241E4212A4E27008D0DA3 /* Audio */,
+				52F241CF212A4D91008D0DA3 /* Math */,
+				52F241CB212A4D88008D0DA3 /* DrawView */,
+				52F241C5212A4D7E008D0DA3 /* ColorPicker */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		52F241AD212A4C74008D0DA3 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				52F241AE212A4C74008D0DA3 /* CircleViewController.h */,
+				52F241AF212A4C74008D0DA3 /* CircleViewController.m */,
+				52F241B0212A4C74008D0DA3 /* CircleViewController.xib */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		52F241B1212A4C74008D0DA3 /* Shiny */ = {
+			isa = PBXGroup;
+			children = (
+				52F241B2212A4C74008D0DA3 /* ShinyViewController.h */,
+				52F241B3212A4C74008D0DA3 /* ShinyViewController.m */,
+				52F241B4212A4C74008D0DA3 /* ShinyViewController.xib */,
+			);
+			path = Shiny;
+			sourceTree = "<group>";
+		};
+		52F241B5212A4C74008D0DA3 /* Smooth */ = {
+			isa = PBXGroup;
+			children = (
+				52F241B6212A4C74008D0DA3 /* SmoothViewController.h */,
+				52F241B7212A4C74008D0DA3 /* SmoothViewController.m */,
+				52F241B8212A4C74008D0DA3 /* SmoothViewController.xib */,
+			);
+			path = Smooth;
+			sourceTree = "<group>";
+		};
+		52F241B9212A4C74008D0DA3 /* MicInput */ = {
+			isa = PBXGroup;
+			children = (
+				52F241BA212A4C74008D0DA3 /* MicInputViewController.h */,
+				52F241BB212A4C74008D0DA3 /* MicInputViewController.m */,
+				52F241BC212A4C74008D0DA3 /* MicInputViewController.xib */,
+			);
+			path = MicInput;
+			sourceTree = "<group>";
+		};
+		52F241C5212A4D7E008D0DA3 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				52F241C6212A4D7E008D0DA3 /* ColorPickerImageView.h */,
+				52F241C7212A4D7E008D0DA3 /* ColorPickerImageView.m */,
+				52F241C8212A4D7E008D0DA3 /* colorWheel1.png */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		52F241CB212A4D88008D0DA3 /* DrawView */ = {
+			isa = PBXGroup;
+			children = (
+				52F241CC212A4D88008D0DA3 /* DrawView.h */,
+				52F241CD212A4D88008D0DA3 /* DrawView.m */,
+			);
+			path = DrawView;
+			sourceTree = "<group>";
+		};
+		52F241CF212A4D91008D0DA3 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				52F241D0212A4D91008D0DA3 /* CGPointUtils.c */,
+				52F241D1212A4D91008D0DA3 /* CGPointUtils.h */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		52F241D3212A4DCF008D0DA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F241E2212A4E04008D0DA3 /* Foundation.framework */,
+				52F241E0212A4DFC008D0DA3 /* libform.5.4.tbd */,
+				52F241DE212A4DF5008D0DA3 /* UIKit.framework */,
+				52F241DC212A4DEF008D0DA3 /* CoreGraphics.framework */,
+				52F241DA212A4DE8008D0DA3 /* QuartzCore.framework */,
+				52F241D8212A4DDE008D0DA3 /* AVFoundation.framework */,
+				52F241D6212A4DD7008D0DA3 /* CoreAudio.framework */,
+				52F241D4212A4DD0008D0DA3 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52F241E4212A4E27008D0DA3 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				52F241E5212A4E27008D0DA3 /* AudioProcessor.h */,
+				52F241E6212A4E27008D0DA3 /* AudioProcessor.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52F24192212A4C44008D0DA3 /* GlassLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F241A9212A4C45008D0DA3 /* Build configuration list for PBXNativeTarget "GlassLight" */;
+			buildPhases = (
+				52F2418F212A4C44008D0DA3 /* Sources */,
+				52F24190212A4C44008D0DA3 /* Frameworks */,
+				52F24191212A4C44008D0DA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlassLight;
+			productName = GlassLight;
+			productReference = 52F24193212A4C44008D0DA3 /* GlassLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52F2418B212A4C44008D0DA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = pkh;
+				TargetAttributes = {
+					52F24192212A4C44008D0DA3 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 52F2418E212A4C44008D0DA3 /* Build configuration list for PBXProject "GlassLight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52F2418A212A4C44008D0DA3;
+			productRefGroup = 52F24194212A4C44008D0DA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52F24192212A4C44008D0DA3 /* GlassLight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52F24191212A4C44008D0DA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F241C2212A4C74008D0DA3 /* SmoothViewController.xib in Resources */,
+				52F241A3212A4C45008D0DA3 /* LaunchScreen.storyboard in Resources */,
+				52F241A0212A4C45008D0DA3 /* Assets.xcassets in Resources */,
+				52F241C0212A4C74008D0DA3 /* ShinyViewController.xib in Resources */,
+				52F241BE212A4C74008D0DA3 /* CircleViewController.xib in Resources */,
+				52F2419E212A4C44008D0DA3 /* Main.storyboard in Resources */,
+				52F241EA212A559B008D0DA3 /* README.md in Resources */,
+				52F241C4212A4C74008D0DA3 /* MicInputViewController.xib in Resources */,
+				52F241CA212A4D7F008D0DA3 /* colorWheel1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52F2418F212A4C44008D0DA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F2419B212A4C44008D0DA3 /* MainViewController.m in Sources */,
+				52F241A6212A4C45008D0DA3 /* main.m in Sources */,
+				52F241BD212A4C74008D0DA3 /* CircleViewController.m in Sources */,
+				52F24198212A4C44008D0DA3 /* AppDelegate.m in Sources */,
+				52F241D2212A4D91008D0DA3 /* CGPointUtils.c in Sources */,
+				52F241C9212A4D7F008D0DA3 /* ColorPickerImageView.m in Sources */,
+				52F241C1212A4C74008D0DA3 /* SmoothViewController.m in Sources */,
+				52F241E7212A4E27008D0DA3 /* AudioProcessor.m in Sources */,
+				52F241C3212A4C74008D0DA3 /* MicInputViewController.m in Sources */,
+				52F241BF212A4C74008D0DA3 /* ShinyViewController.m in Sources */,
+				52F241CE212A4D88008D0DA3 /* DrawView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52F2419C212A4C44008D0DA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F2419D212A4C44008D0DA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52F241A1212A4C45008D0DA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52F241A2212A4C45008D0DA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52F241A7212A4C45008D0DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52F241A8212A4C45008D0DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52F241AA212A4C45008D0DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LW3F5LSN8X;
+				GCC_PREFIX_HEADER = "GlassLight/GlassLight-Prefix.pch";
+				INFOPLIST_FILE = GlassLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.GlassLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52F241AB212A4C45008D0DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LW3F5LSN8X;
+				GCC_PREFIX_HEADER = "GlassLight/GlassLight-Prefix.pch";
+				INFOPLIST_FILE = GlassLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.GlassLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52F2418E212A4C44008D0DA3 /* Build configuration list for PBXProject "GlassLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F241A7212A4C45008D0DA3 /* Debug */,
+				52F241A8212A4C45008D0DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F241A9212A4C45008D0DA3 /* Build configuration list for PBXNativeTarget "GlassLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F241AA212A4C45008D0DA3 /* Debug */,
+				52F241AB212A4C45008D0DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52F2418B212A4C44008D0DA3 /* Project object */;
+}

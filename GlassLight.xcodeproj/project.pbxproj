@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5237AE77224C896800B9301E /* LLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5237AE75224C896800B9301E /* LLViewController.m */; };
+		5237AE78224C896800B9301E /* LLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5237AE76224C896800B9301E /* LLViewController.xib */; };
 		52F24198212A4C44008D0DA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F24197212A4C44008D0DA3 /* AppDelegate.m */; };
 		52F2419B212A4C44008D0DA3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F2419A212A4C44008D0DA3 /* MainViewController.m */; };
 		52F2419E212A4C44008D0DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F2419C212A4C44008D0DA3 /* Main.storyboard */; };
 		52F241A0212A4C45008D0DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F2419F212A4C45008D0DA3 /* Assets.xcassets */; };
-		52F241A3212A4C45008D0DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F241A1212A4C45008D0DA3 /* LaunchScreen.storyboard */; };
 		52F241A6212A4C45008D0DA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F241A5212A4C45008D0DA3 /* main.m */; };
 		52F241BD212A4C74008D0DA3 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F241AF212A4C74008D0DA3 /* CircleViewController.m */; };
 		52F241BE212A4C74008D0DA3 /* CircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F241B0212A4C74008D0DA3 /* CircleViewController.xib */; };
@@ -37,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5237AE74224C896800B9301E /* LLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLViewController.h; sourceTree = "<group>"; };
+		5237AE75224C896800B9301E /* LLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLViewController.m; sourceTree = "<group>"; };
+		5237AE76224C896800B9301E /* LLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLViewController.xib; sourceTree = "<group>"; };
 		52F24193212A4C44008D0DA3 /* GlassLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlassLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F24196212A4C44008D0DA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52F24197212A4C44008D0DA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,7 +48,6 @@
 		52F2419A212A4C44008D0DA3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		52F2419D212A4C44008D0DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52F2419F212A4C45008D0DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		52F241A2212A4C45008D0DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52F241A4212A4C45008D0DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52F241A5212A4C45008D0DA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52F241AE212A4C74008D0DA3 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
@@ -130,10 +133,12 @@
 				52F2419A212A4C44008D0DA3 /* MainViewController.m */,
 				52F2419C212A4C44008D0DA3 /* Main.storyboard */,
 				52F2419F212A4C45008D0DA3 /* Assets.xcassets */,
-				52F241A1212A4C45008D0DA3 /* LaunchScreen.storyboard */,
 				52F241A4212A4C45008D0DA3 /* Info.plist */,
 				52F241A5212A4C45008D0DA3 /* main.m */,
 				52F241E8212A4E9F008D0DA3 /* GlassLight-Prefix.pch */,
+				5237AE74224C896800B9301E /* LLViewController.h */,
+				5237AE75224C896800B9301E /* LLViewController.m */,
+				5237AE76224C896800B9301E /* LLViewController.xib */,
 			);
 			path = GlassLight;
 			sourceTree = "<group>";
@@ -299,9 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F241C2212A4C74008D0DA3 /* SmoothViewController.xib in Resources */,
-				52F241A3212A4C45008D0DA3 /* LaunchScreen.storyboard in Resources */,
 				52F241A0212A4C45008D0DA3 /* Assets.xcassets in Resources */,
 				52F241C0212A4C74008D0DA3 /* ShinyViewController.xib in Resources */,
+				5237AE78224C896800B9301E /* LLViewController.xib in Resources */,
 				52F241BE212A4C74008D0DA3 /* CircleViewController.xib in Resources */,
 				52F2419E212A4C44008D0DA3 /* Main.storyboard in Resources */,
 				52F241EA212A559B008D0DA3 /* README.md in Resources */,
@@ -325,6 +330,7 @@
 				52F241C9212A4D7F008D0DA3 /* ColorPickerImageView.m in Sources */,
 				52F241C1212A4C74008D0DA3 /* SmoothViewController.m in Sources */,
 				52F241E7212A4E27008D0DA3 /* AudioProcessor.m in Sources */,
+				5237AE77224C896800B9301E /* LLViewController.m in Sources */,
 				52F241C3212A4C74008D0DA3 /* MicInputViewController.m in Sources */,
 				52F241BF212A4C74008D0DA3 /* ShinyViewController.m in Sources */,
 				52F241CE212A4D88008D0DA3 /* DrawView.m in Sources */,
@@ -340,14 +346,6 @@
 				52F2419D212A4C44008D0DA3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		52F241A1212A4C45008D0DA3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52F241A2212A4C45008D0DA3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -471,6 +469,7 @@
 				DEVELOPMENT_TEAM = LW3F5LSN8X;
 				GCC_PREFIX_HEADER = "GlassLight/GlassLight-Prefix.pch";
 				INFOPLIST_FILE = GlassLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,6 +488,7 @@
 				DEVELOPMENT_TEAM = LW3F5LSN8X;
 				GCC_PREFIX_HEADER = "GlassLight/GlassLight-Prefix.pch";
 				INFOPLIST_FILE = GlassLight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

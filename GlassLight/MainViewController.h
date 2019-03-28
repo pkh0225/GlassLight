@@ -30,5 +30,6 @@ typedef enum {
     ViewMode m_viewMode;
 }
 @property (weak, nonatomic) IBOutlet UIScrollView *m_scrollView;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet ColorPickerImageView *m_colorPickerImageView; //색 조정 뷰
 @end

@@ -29,28 +29,20 @@
     [super viewDidLoad];
     m_viewMode = ViewModeMic;
     
-    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    CGFloat height = [UIScreen mainScreen].bounds.size.height - [self safeAreaInsets].top - [self safeAreaInsets].bottom;
     
     m_micInputViewController = [[MicInputViewController alloc] initWithNibName:@"MicInputViewController" bundle:nil];
-    m_micInputViewController.view.frame = CGRectMake(0, 0, width, height);
     [_m_scrollView addSubview:m_micInputViewController.view];
     
     m_circleViewController = [[CircleViewController alloc] initWithNibName:@"CircleViewController" bundle:nil];
-    m_circleViewController.view.frame = CGRectMake(width, 0, width, height);
     [_m_scrollView addSubview:m_circleViewController.view];
     
     m_shinyViewController = [[ShinyViewController alloc] initWithNibName:@"ShinyViewController" bundle:nil];
-    m_shinyViewController.view.frame = CGRectMake(width * 2, 0, width, height);
     [_m_scrollView addSubview:m_shinyViewController.view];
     
     
     m_smoothViewController = [[SmoothViewController alloc] initWithNibName:@"SmoothViewController" bundle:nil];
-    m_smoothViewController.view.frame = CGRectMake(width * 3, 0, width, height);
     [_m_scrollView addSubview:m_smoothViewController.view];
     
-    
-    _m_scrollView.contentSize = CGSizeMake(width*4, height);
     
     [self animateColorWheelToShow:NO duration:0];
     _m_colorPickerImageView.delegate = self;
@@ -66,6 +58,17 @@
     
     //    [self SetNotification];
     
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    m_micInputViewController.view.frame = CGRectMake(0, 0, _m_scrollView.bounds.size.width, _m_scrollView.bounds.size.height);
+    m_circleViewController.view.frame = CGRectMake(_m_scrollView.bounds.size.width, 0, _m_scrollView.bounds.size.width, _m_scrollView.bounds.size.height);
+    m_shinyViewController.view.frame = CGRectMake(_m_scrollView.bounds.size.width * 2, 0, _m_scrollView.bounds.size.width, _m_scrollView.bounds.size.height);
+    m_smoothViewController.view.frame = CGRectMake(_m_scrollView.bounds.size.width * 3, 0, _m_scrollView.bounds.size.width, _m_scrollView.bounds.size.height);
+    
+    _m_scrollView.contentSize = CGSizeMake(_m_scrollView.bounds.size.width * 4, _m_scrollView.bounds.size.height);
 }
 
 - (void)didReceiveMemoryWarning
@@ -203,38 +206,5 @@
     
 }
 
-- (UIEdgeInsets)safeAreaInsets
-{
-    if ([self isIPhoneXScreen]) {
-        if (@available(iOS 11.0, *)) {
-            return [UIApplication sharedApplication].windows[0].safeAreaInsets;
-        }
-    }
-    else {
-        return UIEdgeInsetsMake([UIApplication sharedApplication].statusBarFrame.size.height, 0, 0, 0);
-    }
-    
-    return UIEdgeInsetsZero;
-}
-
-- (BOOL)isIPhoneXScreen {
-    if ([UIApplication sharedApplication].windows.count <= 0) {
-        return NO;
-    }
-    
-    if (@available(iOS 11.0, *)) {
-        UIEdgeInsets inset = [UIApplication sharedApplication].windows[0].safeAreaInsets;
-        
-        if (inset.bottom == 0 && inset.top == 0 && inset.right == 0 && inset.left == 0) {
-            return NO;
-        }
-        else {
-            return YES;
-        }
-    }
-    else {
-        return NO;
-    }
-}
 
 @end

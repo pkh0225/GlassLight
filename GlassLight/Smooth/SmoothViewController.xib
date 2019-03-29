@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,12 +26,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="608"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.0050000000000000001" minValue="0.0" maxValue="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="bjX-1Y-FQr">
-                    <rect key="frame" x="10" y="0.0" width="100" height="34"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="96" id="jMg-4y-qTE"/>
-                        <constraint firstAttribute="height" constant="33" id="oQx-xY-IXe"/>
-                    </constraints>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.0050000000000000001" minValue="0.0" maxValue="0.01" translatesAutoresizingMaskIntoConstraints="NO" id="bjX-1Y-FQr">
+                    <rect key="frame" x="5" y="0.0" width="100" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="onSmoothVolChanged:" destination="-1" eventType="valueChanged" id="pC6-3V-vmS"/>
                     </connections>
@@ -41,8 +38,6 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="raQ-Mt-A9K" secondAttribute="bottom" constant="59" id="2vN-hr-ZuO"/>
                 <constraint firstAttribute="top" secondItem="raQ-Mt-A9K" secondAttribute="top" id="Bjw-N3-c5N"/>
-                <constraint firstItem="bjX-1Y-FQr" firstAttribute="leading" secondItem="SPx-EN-Tfc" secondAttribute="leading" constant="12" id="o31-6B-iGD"/>
-                <constraint firstAttribute="top" secondItem="bjX-1Y-FQr" secondAttribute="top" id="oeW-dZ-wCW"/>
                 <constraint firstAttribute="trailing" secondItem="raQ-Mt-A9K" secondAttribute="trailing" id="uj4-bV-s1U"/>
                 <constraint firstItem="raQ-Mt-A9K" firstAttribute="leading" secondItem="SPx-EN-Tfc" secondAttribute="leading" id="x4R-OM-uSU"/>
             </constraints>

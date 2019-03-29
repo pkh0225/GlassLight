@@ -80,29 +80,6 @@
     _planet1.position = self.center;
 }
 
-- (void)drawRect:(CGRect)rect
-{
-    if (!m_draw) return;
-
-//	CGContextRef context = UIGraphicsGetCurrentContext();
-//    
-//    CGContextStrokePath(context);
-//    CGFloat red, green, blue, alpha;
-//    [_m_ColorCircleLine getRed:&red green:&green blue:&blue alpha:&alpha];
-//    CGContextSetRGBStrokeColor(context, red, green, blue, alpha);
-//    CGContextAddArc(context, self.center.x, self.center.y, _m_radiusMax, 0, 360, 0);
-//    
-//    CGContextStrokePath(context);
-//    [_m_ColorCircleFill getRed:&red green:&green blue:&blue alpha:&alpha];
-//    CGContextSetRGBFillColor(context, red, green, blue, alpha);
-//    CGContextFillEllipseInRect(context, CGRectMake(self.center.x - _m_radiusMic,
-//                                                   self.center.y - _m_radiusMic,
-//                                                   _m_radiusMic *2,
-//                                                   _m_radiusMic *2));
-//
-//    CGContextStrokePath(context);
-    
-}
 #pragma - set, get
 - (void)setM_radiusMax:(CGFloat)radiusMax
 {
@@ -120,9 +97,17 @@
 //        [layer removeFromSuperlayer];
 //    }
     
+    
+    _orbit1.borderColor = _m_ColorCircleLine.CGColor;
+    _planet1.backgroundColor = _m_ColorCircleFill.CGColor;
+    if (_m_drawModeFull) {
+        _m_radiusMic = _m_radiusMax;
+        _orbit1.backgroundColor = _m_ColorCircleFill.CGColor;
+        return;
+    }
+    
     if (beforeRadiusMic == _m_radiusMic) return;
     
-    if (_m_drawModeFull) _m_radiusMic = _m_radiusMax;
     
     if (beforeRadiusMic < _m_radiusMic) {
 
@@ -161,20 +146,11 @@
         
         [CATransaction commit];
         
-        
-//        [UIView animateKeyframesWithDuration:10 delay:0 options:UIViewKeyframeAnimationOptionRepeat animations:^{
-//            [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.5 animations:^{
-//                self.planet1.transform = CATransform3DMakeScale( scale , scale, 1);
-//            }];
-////            [UIView addKeyframeWithRelativeStartTime:0.5 relativeDuration:0.5 animations:^{
-////                self.planet1.transform = CATransform3DMakeScale( 5 , 5, 1);
-////            }];
-//        } completion:^(BOOL finished) {
-//        }];
+
     }
     
     beforeRadiusMic = _m_radiusMic;
-//    beforeRadiusMic = 9999999999999;
+
     
 }
 

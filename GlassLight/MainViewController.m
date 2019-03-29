@@ -127,7 +127,7 @@
         
         _m_colorPickerImageView.transform = CGAffineTransformScale(_m_colorPickerImageView.transform , 0.01, 0.01);
         [UIView animateWithDuration:duration animations:^{
-            _m_colorPickerImageView.transform = CGAffineTransformScale(_m_colorPickerImageView.transform , 100, 100);
+            self.m_colorPickerImageView.transform = CGAffineTransformScale(_m_colorPickerImageView.transform , 100, 100);
         }];
         
     }

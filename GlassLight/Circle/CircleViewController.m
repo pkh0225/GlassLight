@@ -28,6 +28,7 @@
     [super viewDidLoad];
     _m_drawView.m_radiusMax = 150;
     _m_drawView.m_drawModeFull = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning

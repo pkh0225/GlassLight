@@ -19,6 +19,7 @@
 {
     
 }
+@property(assign, nonatomic) CGFloat beforeMic;
 @end
 
 @implementation MicInputViewController
@@ -30,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    m_flashMode = YES;
+    m_flashMode = NO;
     m_perLevel = 0;
     recording = NO;
     _m_drawView.m_radiusMax = 150;
@@ -177,11 +178,22 @@
         return;
     }
     m_perLevel = level;
-    _m_drawView.m_radiusMic = _m_drawView.m_radiusMax * level / kLevelMax;
+    
+    
+    CGFloat mic = _m_drawView.m_radiusMax * level / kLevelMax;
+    if (floorf(_m_drawView.m_radiusMic) == floorf(mic)) {
+        return;
+    }
+        _m_drawView.m_radiusMic = mic;
     dispatch_async(dispatch_get_main_queue(), ^{
-        [_m_drawView OnDraw];
-        [self flashOnOff];
+        [self.m_drawView OnDraw];
+        if (mic > self.beforeMic) {
+            [self flashOnOff];
+        }
+        self.beforeMic = mic;
     });
+    
+    
     
 }
 

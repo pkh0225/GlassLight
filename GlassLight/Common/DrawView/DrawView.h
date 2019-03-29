@@ -12,6 +12,8 @@
 {
     BOOL m_draw;
     BOOL m_Touching;
+    
+    CGFloat beforeRadiusMic;
 }
 @property(assign, nonatomic) CGFloat m_radiusMax;
 @property(strong, nonatomic) UIColor *m_ColorCircleLine;

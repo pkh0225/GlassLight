@@ -129,18 +129,25 @@
         }];
         
         CAAnimationGroup *group = [CAAnimationGroup new];
-        group.duration = 0.5;
+        group.duration = 1;
         group.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+        group.removedOnCompletion = NO;
         
         CABasicAnimation *animationUp = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-        animationUp.duration = 0.25;
-        animationUp.repeatCount = 1;
-        animationUp.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-        animationUp.autoreverses = YES;
+        animationUp.duration = 0.15;
+        animationUp.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
         animationUp.fromValue = [NSNumber numberWithFloat:1.0];
         animationUp.toValue = [NSNumber numberWithFloat:scale];
+        animationUp.removedOnCompletion = NO;
         
-        [group setAnimations:@[animationUp]];
+        CABasicAnimation *animationDown = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+        animationDown.duration = 0.8;
+        animationDown.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+        animationDown.fromValue = [NSNumber numberWithFloat:scale];
+        animationDown.toValue = [NSNumber numberWithFloat:1.0];
+        animationDown.removedOnCompletion = NO;
+        
+        [group setAnimations:@[animationUp, animationDown]];
         [layerAnimation addAnimation:group forKey:@"transform.scale"];
         [self.layer addSublayer:layerAnimation];
         
